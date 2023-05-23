@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #D97179;
+    --cor1:#BF344D;
+    --cor2: #F2798F;
+    --cor3: #F2DBD5;
+    --cor4: #BF9E9B;
+    --font0: 'Quicksand', sans-serif;
+    --font1: 'Jost', sans-serif;
+    --font2: 'Source Code Pro', monospace;
+}
+
+header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--cor4);
+    margin: auto;
+    text-align: center;
+}
+
+header h1 {   
+    font-family: var(--font0);
+    font-size: 4em;
+    color: var(--cor1);   
+}
+
+header p {
+    font-family: var(--font1);
+    color: var(--cor3);  
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+    font-weight: bolder;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font2);
+    font-weight: bolder;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: var(--cor3);
+}
+
+section.imagem {
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--cor4);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.363);
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color:  #f2dbd5;
+    
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center ;
+
+}
+
+
+footer {
+    background-color: var(--cor4);
+    font-family: var(--font1);
+    color: var(--cor3);
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
